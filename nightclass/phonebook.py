@@ -12,7 +12,14 @@ phonebook = {'hartsfield': {'name': 'Brian Hartsfield', 'phone': '(899)501-2317'
             'calloway': {'name': 'Cleo Calloway', 'phone': '(811) 816-2840'},
             'childers': {'name': 'Shelly Childers','phone': '(844) 958-6692'}
             }
-
+"""to look up by phone number:
+for ke, va in phonebook.items():
+    for k, v in va.items():
+        if q in v:
+            print("name: {}".format(phonebook[ke]['name']))
+            print("phone: {}".format(phonebook)[ke]['phone'])
+            side note: .items breaks dictionaries into tuples
+"""
 while True:
     u_i = input("Do you want to find, add, or delete an entry? Or quit?: ")
     if u_i == 'find':
