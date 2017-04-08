@@ -7,7 +7,8 @@ import time
 zip_code = input('What is your zip code?: ')
 payload = {'appid': 'a7b7bd116544e6dc7c390e5f366502d3', 'zip': zip_code}
 r = requests.get('http://api.openweathermap.org/data/2.5/weather', params=payload)
-
+fore = requests.get('http://api.openweathermap.org/data/2.5/forecast', params=payload)
+fore_info = fore.json()
 data = r.json()
 # temps = data['main']['temp']
 
@@ -20,10 +21,8 @@ if temperature_preference == 'Fahrenheit':
 else:
     print(c)
 
-forecast = requests.get('http://api.openweathermap.org/data/2.5/forecast', params=payload)
-forecast_info = forecast.json()
 
-print(forecast_info['list']['main']['temp'])
+print(fore_info['main']['temp'])
 
 #print (data['main']['temp'])
 

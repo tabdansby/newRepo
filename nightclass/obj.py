@@ -1,5 +1,5 @@
 class BankAccount:
-    def __init__(self, bal, name): #<--- have to put
+    def __init__(self, bal, name): #<--- have to put def first
         self.balance = bal
         self.name = name
     def greet_balance(self):
