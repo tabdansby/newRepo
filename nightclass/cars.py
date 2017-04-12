@@ -13,8 +13,7 @@ class Vehicle:
 
 
 
-
-
+#consider .first method
 
 class ParkingLot:
     def __init__(self, spaces):
@@ -22,16 +21,28 @@ class ParkingLot:
         self.spaces_left = spaces
         self.parked_vehicles = self.create_space_numbers()
 
-    def create_space_numbers(self):
+    def create_space_numbers(self, spaces):
         spaces_diction = {}
+
+
         for i in range(self.spaces):
             spaces_diction[i] = None
 
-        return spaces_diction
+       """""def addword(word, pagenumber):
+            if theIndex.has_key(word):
+                theIndex[word].append(pagenumber)
+            else:
+                theIndex[word] = [pagenumber]"""
 
 
 
     def park(self, obj):
+
+        available_space = next(e < for e in spaces_diction)
+        theIndex = {}
+
+
+
         if self.spaces_left > 0:
             self.spaces_left -= 1
             self.parked_vehicles.append(obj)
@@ -60,7 +71,9 @@ class ParkingLot:
                 except IndexError:
                     print('There is no vehicle in that spot.')
 
-plot = ParkingLot(5)
+
+
+plot = ParkingLot(10)
 
 car1 = Vehicle('Dodge', 'Charger', 2017, 'Black')
 
