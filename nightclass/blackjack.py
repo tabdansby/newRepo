@@ -1,22 +1,44 @@
 import random
 
+
 class Deck:
     def __init__(self, shuffle, deal):
         self.shuffle = shuffle
         self.deal = deal
 
-class Cards:
-   def __init__(self, rank, value, suit):
-       self.rank = rank
-       self.value = value
-       self.suit = suit
-
     def create_card(self):
-        rank = {'A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'}
-        value = {'A': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 10, 'J': 10, 'Q': 10, 'K': 10}
-        suit = {'Diamonds', 'Spades', 'Hearts', 'Clubs'}
+        nm_values = {'A': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 10, 'J': 10, 'Q': 10,
+                     'K': 10}
+        suits = ['Diamonds', 'Spades', 'Hearts', 'Clubs']
+        [random.choice(val) for val in nm_values]:
+            Deck(nm_values.items())
 
-        pick = [random.choice(self.rank) for i in rank]
+create_card()
+
+#blackjack needs a dealer, player, cards, a deck, the ability to shuffle and deal, and the ability to check whether to hit
+#for players, you can hit whenever...? Dealer gets a hit if their hand is below 17. Shuffle and deal belong to deck.
+#Hand is its own class. 2 players and dealer will have hands to play.
+#Deck is made up of cards. Cards have a suit, value, and rank.
+#
+
+
+
+
+
+
+#    def shuffle_deck(self, shuffle):
+
+
+
+
+
+
+#create_card(self)
+
+
+
+
+
 
 """class Hand:
     def __init__(self):
