@@ -1,4 +1,4 @@
-# Lab: Pseudo-Credit Card Validation
+"""# Lab: Pseudo-Credit Card Validation
 
 ###### Delivery Method: Doctests
 
@@ -32,5 +32,16 @@ For example, the worked out steps would be:
 5. `1  8  9  9  7  6  7  5  5  3  5  6  1  5  8`
 6. 85
 7. 5
-8. Valid!
-```
+8. Valid!"""
+
+cc = [9, 21, 53, 69, 39, 41, 23, 62, 16, 60, 54, 66, 11, 31]
+cc1 = cc.copy
+new_cc = []
+
+
+def number_check():
+    del cc[13]
+    new_cc[::-1]
+    print(cc)
+
+number_check()
