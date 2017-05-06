@@ -1,0 +1,45 @@
+.wrapper {
+
+    display:grid;
+    grid-template-columns: 70% 30%;
+    grid-column-gap: 10px;
+    grid-gap: 10px;
+    width: 75%;
+    margin: auto;
+}
+
+header, footer {
+    grid-column-end: span 2;
+    background: #ddd;
+
+
+}
+
+aside {
+    background: #eee;
+
+}
+
+.projectWrapper {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-column-end: span 2;
+    display: grid;
+    grid-template-columns: 33.7% 33.7% 33.7%;
+    grid-template-rows: 30px 100px
+    height: 200px;
+
+}
+
+.projectWrapper h2 {
+    grid-column-end: span 3;
+    margin: 0;
+
+
+}
+
+
+.projectWrapper div {
+    background: #eee;
+
+}

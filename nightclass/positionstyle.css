@@ -1,0 +1,35 @@
+div {
+    width: 100px;
+    height: 100px;
+
+}
+
+main > div:first-child {
+    background-color: red;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    z-index: 5;
+}
+
+main div:nth-child(4) {
+    background-color: blue;
+    position: static;
+}
+
+main div:nth-child(2) {
+    background-color: green;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    z-index: 6;
+}
+
+main div > nth-child(3) {
+    background-color: orange;
+    position: fixed;
+}
+
+main div > last-child {
+    background-color: purple;
+}
