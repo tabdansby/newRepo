@@ -33,15 +33,35 @@ For example, the worked out steps would be:
 6. 85
 7. 5
 8. Valid!"""
-
+from functools import reduce
 cc = [9, 21, 53, 69, 39, 41, 23, 62, 16, 60, 54, 66, 11, 31]
-cc1 = cc.copy
-new_cc = []
+
+new_cc = cc[::]
 
 
 def number_check():
-    del cc[13]
-    new_cc[::-1]
-    print(cc)
+    cc_copy = new_cc[::]
+    del cc_copy[13]
+    new_cc.append(cc_copy)
+    a = (cc_copy[::-1])
+    a[0::2] = [i*2 for i in a[0::2]]
+    a = [i-9 for i in a if i > 9]
+    new_cc.append(a)
+    a = str(sum(a))
+    new_cc.append(a)
+    if cc[13] == a[1]:
+        print('Credit card successfully validated!')
+    else:
+        print('Credit card not valid!')
 
 number_check()
+##your_list[::2] = [x*2 for x in your_list[::2]]
+    #b = []
+
+"""
+data = [1,2,3,4,5,6]
+for i,k in zip(data[0::2], data[1::2]):
+    print str(i), '+', str(k), '=', str(i+k)"""
+
+
+
