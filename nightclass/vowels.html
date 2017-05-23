@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vowels Check</title>
+        <style type="text/css">
+
+        /* styles go here */
+
+        </style>
+    </head>
+    <body>
+
+        <!-- content goes here -->
+
+        <script type="text/javascript">
+
+        function isVowel(x) {
+
+  var result;
+
+  result = x == "A" || x == "E" || x == "I" || x == "O" || x == "U" || x == 'a' || x == 'e' || x == 'i' || x == "o" || x == 'u';
+  return result;
+}
+
+var input;
+
+do {
+  input = prompt("Enter a character ");
+  if (input.length == 1) {
+    alert(isVowel(input));
+  }
+} while (input.length != 1);
+
+
+        </script>
+    </body>
+</html>
