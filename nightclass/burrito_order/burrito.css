@@ -1,0 +1,13 @@
+#red_bar {
+  /* height: 50px;
+   width: 100px;*/
+  background-color: red;
+  border: dashed;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+
+/*# sourceMappingURL=burrito.css.map */
