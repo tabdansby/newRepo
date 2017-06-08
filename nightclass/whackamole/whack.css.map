@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KAAM;EACL,MAAM,EAAE,KAAK;;AAKd,OAAQ;EACP,OAAO,EAAE,IAAI",
+"sources": ["whack.scss"],
+"names": [],
+"file": "whack.css"
+}

@@ -8,9 +8,14 @@
 
 <!-- This script and many more are available free online at -->
 <!-- The JavaScript Source!! http://www.javascriptsource.com -->
-<!-- Original:  Paul DeBrino -->
+<!-- Original:  Paul DeBrino
+<p><center>
+<font face="arial, helvetica" size"-2">Free JavaScripts provided<br>
+by <a href="http://javascriptsource.com">The JavaScript Source</a></font>
+</center><p>
+-->
 <!-- Web Site:   http://infinity-rd.com -->
-<!-- Begin
+
 	function CheckChoice(whichbox)
 	{
 		with (whichbox.form)
@@ -95,26 +100,24 @@
 
 	}
 
-//  End -->
+
 </script>
 </head>
-<body>
+<body onLoad="InitForm();" onreset="InitForm();">
 <header>
 <div id="red_bar">
     <section>
         <h2 class="full-width-tinted">Burrito Restaurant</h2>
         <h1>Burrito Options</h1>
 
-  <p>This approach uses negative z-index on a pseudo-element to tint the heading background.</p>
 </section>
 
 </div>
 </header>
-<div>
-<BODY onLoad="InitForm();" onreset="InitForm();">
+
 <form method="POST" name="myform">
 	<font=Arial size=2>
-
+<ul>
     Tortilla:<br>
     Flour 
 		<input type="radio" name="tortilla" id="flour"  value=2.00  onclick="this.form.total.value=CheckChoice(this);">
@@ -125,14 +128,16 @@
 
     Corn (gluten-free)
 		<input type="radio" name="tortilla"  id="corn" value=2.00  onclick="this.form.total.value=CheckChoice(this);">
+</ul>
 </form>
 
-</div>
+
 
             <br><br>
 <form>
 	<b>Pick your protein:</b>
 	<br>
+	<ul>
 	No thanks 
 		<input type="radio" name="Protein" value=0.00
 		onclick="this.form.total.value=CheckChoice(this);">
@@ -145,6 +150,7 @@
 	Sofritas (tofu)
 		<input type="radio" name="Protein" value=1.50
 		onclick="this.form.total.value=CheckChoice(this);">
+</ul>
 	<br><br><br>
 	<input type="hidden" name="hiddentotal" value=0>
 	<input type="hidden" name="hiddenpriorradio" value=0>
@@ -157,10 +163,7 @@
 </form>
 
 
-<p><center>
-<font face="arial, helvetica" size"-2">Free JavaScripts provided<br>
-by <a href="http://javascriptsource.com">The JavaScript Source</a></font>
-</center><p>
+
 
 
 
